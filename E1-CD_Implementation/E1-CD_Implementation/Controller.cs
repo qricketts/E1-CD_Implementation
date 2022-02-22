@@ -50,7 +50,7 @@ namespace E1_CD_Implementation
         /// </summary>
         /// <param name="state">State of the program</param>
         /// <param name="args"></param>
-        public void handleEvents(State state, String args)
+        public void handleEvents(State state, Book b, string args)
         {
             switch (state)
             {

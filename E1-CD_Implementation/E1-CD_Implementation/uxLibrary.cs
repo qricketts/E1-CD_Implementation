@@ -39,12 +39,30 @@ namespace E1_CD_Implementation
         private void uxSelectBook_Click(object sender, EventArgs e)
         {
             Book b = books[uxBookList.SelectedIndex];
-            //I think this should be something like handler(State.BOOKSELECTED, b) [I will need to change handler to be able to do this]
+
+            //I (Sean) added this, lmk if it causes issues
+            handler(State.BOOKSELECTED, b, "");
         }
 
         public void DisplayBook(State s)
         {
-
+            switch (s)
+            {
+                case State.START:
+                    break;
+                case State.ADDBOOK:
+                    break;
+                case State.BOOKSELECTED:
+                    break;
+                case State.RETRIEVEINFORMATION:
+                    break;
+                case State.UPDATEINFORMATION:
+                    break;
+                case State.CLOSE:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
