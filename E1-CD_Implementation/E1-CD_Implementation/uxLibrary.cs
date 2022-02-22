@@ -18,7 +18,7 @@ namespace E1_CD_Implementation
 
         public uxLibrary(InputHandler h)
         {
-            books.Add(new Boo)
+            books.Add(new Book("hi", 10));
             handler = h;
             InitializeComponent();
             //this is a test- sean hurt

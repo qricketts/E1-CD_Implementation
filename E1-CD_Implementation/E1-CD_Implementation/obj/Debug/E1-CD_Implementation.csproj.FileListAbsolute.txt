@@ -15,3 +15,14 @@ C:\Users\hunte\Desktop\CIS 501 E1-CD_Implementation\E1-CD_Implementation\E1-CD_I
 C:\Users\hunte\Desktop\CIS 501 E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.pdb
 C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.uxBook.resources
 C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.uxLibrary.resources
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.AssemblyReference.cache
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.Properties.Resources.resources
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.uxBook.resources
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.uxLibrary.resources
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.GenerateResource.cache
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.CoreCompileInputs.cache
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.exe
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.pdb
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\bin\Debug\E1-CD_Implementation.exe.config
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\bin\Debug\E1-CD_Implementation.exe
+C:\Users\hunte\Desktop\CIS 501 E1 Kindle\E1-CD_Implementation\E1-CD_Implementation\bin\Debug\E1-CD_Implementation.pdb
