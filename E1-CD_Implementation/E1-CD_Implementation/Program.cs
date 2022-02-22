@@ -6,6 +6,8 @@ using System.Windows.Forms;
 
 namespace E1_CD_Implementation
 {
+    public delegate void Observer(State s);
+    public delegate void InputHandler(State s);
     static class Program
     {
         /// <summary>
