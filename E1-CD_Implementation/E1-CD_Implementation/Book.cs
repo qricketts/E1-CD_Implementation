@@ -14,7 +14,37 @@ namespace E1_CD_Implementation
 
         public int CurrentPage { get; set; }
 
-        public int[] BookMarks { get; set; } = new int[3];
+        private int[] bookMarks = new int[3];
+
+        public void SetBookMark(int index, int pageNum)
+        {
+            bookMarks[index] = pageNum;
+        }
+
+        public int[] GetBookMarks()
+        {
+            return bookMarks;
+        }
+
+        //Changes page
+        public void GoToPage(int pageNum)
+        {
+            if (pageNum < PageCount && pageNum >= 0) CurrentPage = pageNum;
+        }
+
+        //Changes page
+        public void NextPage()
+        {
+            if (CurrentPage >= PageCount - 1) return;
+            CurrentPage++;
+        }
+
+        //Changes page
+        public void PrevPage()
+        {
+            if (CurrentPage <= 0) return;
+            CurrentPage--;
+        }
 
 
     }

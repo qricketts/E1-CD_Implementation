@@ -15,6 +15,10 @@ namespace E1_CD_Implementation
 
         public Book SelectedBook { get; set; }
 
-        public void SelectBook()
+        public void SelectBook(Book book)
+        {
+            SelectedBook = book;
+        }
+
     }
 }
