@@ -38,9 +38,9 @@ namespace E1_CD_Implementation
             // 
             // uxAdd
             // 
-            this.uxAdd.Location = new System.Drawing.Point(24, 283);
+            this.uxAdd.Location = new System.Drawing.Point(132, 279);
             this.uxAdd.Name = "uxAdd";
-            this.uxAdd.Size = new System.Drawing.Size(66, 43);
+            this.uxAdd.Size = new System.Drawing.Size(66, 47);
             this.uxAdd.TabIndex = 0;
             this.uxAdd.Text = "Add";
             this.uxAdd.UseVisualStyleBackColor = true;
@@ -48,17 +48,17 @@ namespace E1_CD_Implementation
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 257);
+            this.textBox1.Location = new System.Drawing.Point(12, 305);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 20);
+            this.textBox1.Size = new System.Drawing.Size(114, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Pages";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(24, 257);
+            this.textBox2.Location = new System.Drawing.Point(12, 279);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(32, 20);
+            this.textBox2.Size = new System.Drawing.Size(114, 20);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Title";
             // 
@@ -74,9 +74,9 @@ namespace E1_CD_Implementation
             // uxSelectBook
             // 
             this.uxSelectBook.Enabled = false;
-            this.uxSelectBook.Location = new System.Drawing.Point(117, 283);
+            this.uxSelectBook.Location = new System.Drawing.Point(214, 279);
             this.uxSelectBook.Name = "uxSelectBook";
-            this.uxSelectBook.Size = new System.Drawing.Size(136, 47);
+            this.uxSelectBook.Size = new System.Drawing.Size(153, 47);
             this.uxSelectBook.TabIndex = 1;
             this.uxSelectBook.Text = "Select Book";
             this.uxSelectBook.UseVisualStyleBackColor = true;
