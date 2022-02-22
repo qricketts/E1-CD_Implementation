@@ -29,22 +29,22 @@ namespace E1_CD_Implementation
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.uxAdd = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.uxBookList = new System.Windows.Forms.ListBox();
             this.uxSelectBook = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // uxAdd
             // 
-            this.button1.Location = new System.Drawing.Point(24, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.uxAdd.Location = new System.Drawing.Point(24, 283);
+            this.uxAdd.Name = "uxAdd";
+            this.uxAdd.Size = new System.Drawing.Size(66, 43);
+            this.uxAdd.TabIndex = 0;
+            this.uxAdd.Text = "Add";
+            this.uxAdd.UseVisualStyleBackColor = true;
+            this.uxAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -89,7 +89,7 @@ namespace E1_CD_Implementation
             this.ClientSize = new System.Drawing.Size(379, 342);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.uxAdd);
             this.Controls.Add(this.uxSelectBook);
             this.Controls.Add(this.uxBookList);
             this.Name = "uxLibrary";
@@ -103,7 +103,7 @@ namespace E1_CD_Implementation
 
         private System.Windows.Forms.ListBox uxBookList;
         private System.Windows.Forms.Button uxSelectBook;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button uxAdd;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
     }
