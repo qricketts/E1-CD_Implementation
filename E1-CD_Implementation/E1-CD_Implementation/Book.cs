@@ -14,8 +14,16 @@ namespace E1_CD_Implementation
 
         public int CurrentPage { get; set; }
 
-        public int[] BookMarks { get; set; } = new int[3];
+        private int[] bookMarks = new int[3];
 
+        public void SetBookMark(int index, int pageNum)
+        {
+            bookMarks[index] = pageNum;
+        }
 
+        public int[] GetBookMarks()
+        {
+            return bookMarks;
+        }
     }
 }

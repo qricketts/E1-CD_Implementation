@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="Controller.cs" />
-    <Compile Include="DummyDeleteAfterwards.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
