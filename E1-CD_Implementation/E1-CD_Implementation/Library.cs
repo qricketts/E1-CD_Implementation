@@ -19,5 +19,6 @@ namespace E1_CD_Implementation
         {
             SelectedBook = book;
         }
+
     }
 }
