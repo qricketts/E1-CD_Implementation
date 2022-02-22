@@ -39,6 +39,7 @@ namespace E1_CD_Implementation
         private void uxSelectBook_Click(object sender, EventArgs e)
         {
             Book b = books[uxBookList.SelectedIndex];
+            //I think this should be something like handler(State.BOOKSELECTED, b) [I will need to change handler to be able to do this]
         }
 
         public void DisplayBook(State s)
