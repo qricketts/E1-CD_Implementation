@@ -57,8 +57,11 @@ namespace E1_CD_Implementation
                 case State.START:
                     break;
                 case State.ADDBOOK:
+                    model.AddBook(b);
+                    observer(State.ADDBOOK, b);
                     break;
                 case State.BOOKSELECTED:
+                    observer(State.BOOKSELECTED, b);
                     break;
                 case State.RETRIEVEINFORMATION:
                     break;

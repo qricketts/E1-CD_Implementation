@@ -16,6 +16,11 @@ namespace E1_CD_Implementation
 
         public Book SelectedBook { get; set; }
 
+        public Library()
+        {
+            Books.Add(new Book("Yo mama", 20));
+        }
+
         public void SelectBook(Book book)
         {
             SelectedBook = book;

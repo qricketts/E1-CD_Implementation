@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace E1_CD_Implementation
 {
-    public delegate void Observer(State s);
+    public delegate void Observer(State s, Book b);
     public delegate void InputHandler(State s, Book b, string args);
     static class Program
     {
@@ -21,7 +21,7 @@ namespace E1_CD_Implementation
             Library lib = new Library();
             
             Controller controller = new Controller(lib);
-            uxLibrary view = new uxLibrary(controller.handleEvents);
+            uxLibrary view = new uxLibrary(controller.handleEvents, lib);
             controller.SetObserver(view.DisplayBook);
             Application.Run(view);
         }

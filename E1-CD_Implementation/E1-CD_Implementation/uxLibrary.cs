@@ -16,14 +16,15 @@ namespace E1_CD_Implementation
 
         private InputHandler handler;
 
-        public uxLibrary(InputHandler h)
+        private Library model;
+        public uxLibrary(InputHandler h, Library m)
         {
-            books.Add(new Boo)
+            model = m;
             handler = h;
             InitializeComponent();
             //this is a test- sean hurt
 
-            uxBookList.DataSource = books;
+            uxBookList.DataSource = m.Books;
 
             if (uxBookList.SelectedItem != null)
             {
@@ -39,13 +40,13 @@ namespace E1_CD_Implementation
 
         private void uxSelectBook_Click(object sender, EventArgs e)
         {
-            Book b = books[uxBookList.SelectedIndex];
+            Book b = model.Books[uxBookList.SelectedIndex];
 
             //I (Sean) added this, lmk if it causes issues
             handler(State.BOOKSELECTED, b, "");
         }
 
-        public void DisplayBook(State s)
+        public void DisplayBook(State s, Book b)
         {
             switch (s)
             {
@@ -54,6 +55,8 @@ namespace E1_CD_Implementation
                 case State.ADDBOOK:
                     break;
                 case State.BOOKSELECTED:
+                    uxBook newBook = new uxBook(b);
+                    newBook.Show();
                     break;
                 case State.RETRIEVEINFORMATION:
                     break;
