@@ -52,6 +52,7 @@ namespace E1_CD_Implementation
             this.uxPageBackward.TabIndex = 1;
             this.uxPageBackward.Text = "<";
             this.uxPageBackward.UseVisualStyleBackColor = true;
+            this.uxPageBackward.Click += new System.EventHandler(this.uxPageBackward_Click);
             // 
             // uxPageForward
             // 
@@ -61,6 +62,7 @@ namespace E1_CD_Implementation
             this.uxPageForward.TabIndex = 2;
             this.uxPageForward.Text = ">";
             this.uxPageForward.UseVisualStyleBackColor = true;
+            this.uxPageForward.Click += new System.EventHandler(this.uxPageForward_Click);
             // 
             // uxAddBookmark
             // 
@@ -70,6 +72,7 @@ namespace E1_CD_Implementation
             this.uxAddBookmark.TabIndex = 3;
             this.uxAddBookmark.Text = "Add Bookmark";
             this.uxAddBookmark.UseVisualStyleBackColor = true;
+            this.uxAddBookmark.Click += new System.EventHandler(this.uxAddBookMark_Click);
             // 
             // uxRemoveBookmark
             // 
@@ -79,6 +82,7 @@ namespace E1_CD_Implementation
             this.uxRemoveBookmark.TabIndex = 4;
             this.uxRemoveBookmark.Text = "Remove Bookmark";
             this.uxRemoveBookmark.UseVisualStyleBackColor = true;
+            this.uxRemoveBookmark.Click += new System.EventHandler(this.uxRemoveBookmark_Click);
             // 
             // uxBook
             // 
