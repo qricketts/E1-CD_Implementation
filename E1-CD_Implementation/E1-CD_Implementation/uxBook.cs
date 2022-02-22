@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace E1_CD_Implementation
 {
-    public partial class Form1 : Form
+    public partial class uxBook : Form
     {
-        public Form1()
+        public uxBook()
         {
             InitializeComponent();
-            //this is a test- sean hurt
         }
     }
 }
