@@ -20,7 +20,7 @@ namespace E1_CD_Implementation
         {
             Title = title;
             PageCount = pageCount;
-            CurrentPage = 0;
+            CurrentPage = 1;
             bookMarks = new List<int>();
         }
 
@@ -56,7 +56,7 @@ namespace E1_CD_Implementation
         //Changes page
         public void PrevPage()
         {
-            if (CurrentPage > 0)
+            if (CurrentPage > 1)
                 CurrentPage--;
         }
 
