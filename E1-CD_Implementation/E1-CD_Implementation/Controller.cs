@@ -8,7 +8,11 @@ namespace E1_CD_Implementation
 {
     public enum State
     {
-
+        START = 0,
+        BOOKSELECTED,
+        RETRIEVEINFORMATION,
+        UPDATEINFORMATION,
+        CLOSE
     }
 
     class Controller
@@ -16,7 +20,7 @@ namespace E1_CD_Implementation
         /// <summary>
         /// The App's Database
         /// </summary>
-        Object model;
+        Library model;
 
         /// <summary>
         /// The App's User Interface
