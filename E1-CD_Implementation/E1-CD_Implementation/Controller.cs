@@ -26,17 +26,23 @@ namespace E1_CD_Implementation
         /// <summary>
         /// The App's User Interface
         /// </summary>
-        uxLibrary view;
+        //uxLibrary view;
+
+        Observer observer;
 
         /// <summary>
         /// Constructor for Controller
         /// </summary>
         /// <param name="m">Model Object</param>
         /// <param name="v">View Object</param>
-        public Controller(Library m, uxLibrary v)
+        public Controller(Library m)
         {
             model = m;
-            view = v;
+        }
+
+        public void SetObserver(Observer o)
+        {
+            observer = o;
         }
 
         /// <summary>
