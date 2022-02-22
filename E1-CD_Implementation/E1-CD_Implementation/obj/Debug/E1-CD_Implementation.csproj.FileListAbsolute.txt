@@ -1,0 +1,9 @@
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\bin\Debug\E1-CD_Implementation.exe.config
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\bin\Debug\E1-CD_Implementation.exe
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\bin\Debug\E1-CD_Implementation.pdb
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.AssemblyReference.cache
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.Properties.Resources.resources
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.GenerateResource.cache
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.CoreCompileInputs.cache
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.exe
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.pdb
