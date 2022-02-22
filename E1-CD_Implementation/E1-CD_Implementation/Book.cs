@@ -24,6 +24,11 @@ namespace E1_CD_Implementation
             bookMarks = new List<int>();
         }
 
+        public void SetBookMark(List<int> bookmark)
+        {
+            bookMarks = bookmark;
+        }
+
         public void SetBookMark(int index, int pageNum)
         {
             if (index < 3)
