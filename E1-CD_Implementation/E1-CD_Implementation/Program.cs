@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace E1_CD_Implementation
 {
     public delegate void Observer(State s);
-    public delegate void InputHandler(State s);
+    public delegate void InputHandler(State s, String args);
     static class Program
     {
         /// <summary>
@@ -18,7 +18,12 @@ namespace E1_CD_Implementation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new uxLibrary());
+            Library lib = new Library();
+            
+            Controller controller = new Controller(lib);
+            uxLibrary view = new uxLibrary(controller.handleEvents);
+            controller.SetObserver(view.DisplayBook);
+            Application.Run(view);
         }
     }
 }

@@ -14,8 +14,11 @@ namespace E1_CD_Implementation
     {
         public BindingList<Book> books = new BindingList<Book>();
 
-        public uxLibrary()
+        private InputHandler handler;
+
+        public uxLibrary(InputHandler h)
         {
+            handler = h;
             InitializeComponent();
             //this is a test- sean hurt
 
@@ -36,7 +39,12 @@ namespace E1_CD_Implementation
         private void uxSelectBook_Click(object sender, EventArgs e)
         {
             Book b = books[uxBookList.SelectedIndex];
-            var book = new uxBook(b);
+            //I think this should be something like handler(State.BOOKSELECTED, b) [I will need to change handler to be able to do this]
+        }
+
+        public void DisplayBook(State s)
+        {
+
         }
     }
 }
