@@ -40,15 +40,18 @@ namespace E1_CD_Implementation
             this.uxBookList.Name = "uxBookList";
             this.uxBookList.Size = new System.Drawing.Size(355, 251);
             this.uxBookList.TabIndex = 0;
+            this.uxBookList.SelectedIndexChanged += new System.EventHandler(this.uxBookList_SelectedIndexChanged);
             // 
             // uxSelectBook
             // 
+            this.uxSelectBook.Enabled = false;
             this.uxSelectBook.Location = new System.Drawing.Point(117, 283);
             this.uxSelectBook.Name = "uxSelectBook";
             this.uxSelectBook.Size = new System.Drawing.Size(136, 47);
             this.uxSelectBook.TabIndex = 1;
             this.uxSelectBook.Text = "Select Book";
             this.uxSelectBook.UseVisualStyleBackColor = true;
+            this.uxSelectBook.Click += new System.EventHandler(this.uxSelectBook_Click);
             // 
             // uxLibrary
             // 
