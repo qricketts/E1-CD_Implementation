@@ -12,10 +12,12 @@ namespace E1_CD_Implementation
 {
     public partial class uxLibrary : Form
     {
-        public BindingList<Book> books = new BindingList<Book>();
-
+        //public BindingList<Book> books = new BindingList<Book>();
+        BindingSource bs = new BindingSource();
         private InputHandler handler;
-
+        private Button button1;
+        private TextBox textBox1;
+        private TextBox textBox2;
         private Library model;
         public uxLibrary(InputHandler h, Library m)
         {
@@ -24,7 +26,8 @@ namespace E1_CD_Implementation
             InitializeComponent();
             //this is a test- sean hurt
 
-            uxBookList.DataSource = m.Books;
+            bs.DataSource = m.Books;
+            uxBookList.DataSource = bs;
 
             if (uxBookList.SelectedItem != null)
             {
@@ -53,6 +56,7 @@ namespace E1_CD_Implementation
                 case State.START:
                     break;
                 case State.ADDBOOK:
+                    bs.ResetBindings(false);
                     break;
                 case State.BOOKSELECTED:
                     uxBook newBook = new uxBook(b);
@@ -67,6 +71,12 @@ namespace E1_CD_Implementation
                 default:
                     break;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Book b = new Book(textBox2.Text, Int32.Parse(textBox1.Text));
+            handler(State.ADDBOOK, b, "");
         }
     }
 }
