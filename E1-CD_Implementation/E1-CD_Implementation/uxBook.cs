@@ -19,25 +19,57 @@ namespace E1_CD_Implementation
             InitializeComponent();
 
             book = b;
-            uxPage.Text = book.Title + "\n\n\n\n" + book.CurrentPage + " / " + book.PageCount;
+            updatePage();
         }
 
         private void uxPageForward_Click(object sender, EventArgs e)
         {
             book.NextPage();
-            uxPage.Text = book.Title + "\n\n\n\n" + book.CurrentPage + " / " + book.PageCount;
+            updatePage();
         }
 
         private void uxPageBackward_Click(object sender, EventArgs e)
         {
             book.PrevPage();
-            uxPage.Text = book.Title + "\n\n\n\n" + book.CurrentPage + " / " + book.PageCount;
+            updatePage();
         }
 
         private void uxAddBookMark_Click(object sender, EventArgs e)
         {
-            book.SetBookMark(book.GetBookMarks().Length, book.CurrentPage);
-            uxPage.Text = book.Title + "\n\n\n\n" + book.CurrentPage + " / " + book.PageCount;
+            book.SetBookMark(book.GetBookMarks().Count, book.CurrentPage);
+            updatePage();
+        }
+
+        //WIP
+        /*private void uxRemoveBookMark_Click(object sender, EventArgs e)
+        {
+            List<int> bookmarks = book.GetBookMarks();
+            int i = 0;
+            foreach(int bm in bookmarks)
+            {
+                if (bm == book.CurrentPage)
+                    bookmarks.Remove(bm);
+            }
+            book.SetBookMark(bookmarks);
+            updatePage();
+        }*/
+
+        private void updatePage()
+        {
+            List<int> bookmarks = book.GetBookMarks();
+            string temp = "\t Bookmarks are at: ";
+            bool first = true;
+            foreach (int bm in bookmarks)
+            {
+                if (first)
+                {
+                    temp = String.Concat(temp, bm);
+                    first = false;
+                }
+                else
+                    temp = String.Concat(temp, ", " + bm);
+            }
+            uxPage.Text = book.Title + "\n" + book.CurrentPage + " / " + book.PageCount + temp;
         }
     }
 }
