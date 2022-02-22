@@ -55,6 +55,9 @@ namespace E1_CD_Implementation
             CurrentPage--;
         }
 
-
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }
