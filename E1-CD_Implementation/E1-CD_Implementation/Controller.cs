@@ -11,9 +11,6 @@ namespace E1_CD_Implementation
         START = 0,
         ADDBOOK,
         BOOKSELECTED,
-        RETRIEVEINFORMATION,
-        UPDATEINFORMATION,
-        CLOSE
     }
 
     class Controller
@@ -22,11 +19,6 @@ namespace E1_CD_Implementation
         /// The App's Database
         /// </summary>
         Library model;
-
-        /// <summary>
-        /// The App's User Interface
-        /// </summary>
-        //uxLibrary view;
 
         Observer observer;
 
@@ -62,12 +54,6 @@ namespace E1_CD_Implementation
                     break;
                 case State.BOOKSELECTED:
                     observer(State.BOOKSELECTED, b);
-                    break;
-                case State.RETRIEVEINFORMATION:
-                    break;
-                case State.UPDATEINFORMATION:
-                    break;
-                case State.CLOSE:
                     break;
                 default:
                     break;

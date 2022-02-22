@@ -61,12 +61,6 @@ namespace E1_CD_Implementation
                     uxBook newBook = new uxBook(b);
                     newBook.Show();
                     break;
-                case State.RETRIEVEINFORMATION:
-                    break;
-                case State.UPDATEINFORMATION:
-                    break;
-                case State.CLOSE:
-                    break;
                 default:
                     break;
             }

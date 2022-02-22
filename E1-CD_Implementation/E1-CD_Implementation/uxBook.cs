@@ -71,7 +71,7 @@ namespace E1_CD_Implementation
                 else
                     temp = String.Concat(temp, ", " + bm);
             }
-            uxPage.Text = book.Title + "\n" + book.CurrentPage + " / " + book.PageCount + temp;
+            uxPage.Text = book.Title + "\t\t" + book.CurrentPage + " / " + book.PageCount + temp;
         }
     }
 }
