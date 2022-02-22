@@ -103,6 +103,9 @@ namespace E1_CD_Implementation
 
         private System.Windows.Forms.ListBox uxBookList;
         private System.Windows.Forms.Button uxSelectBook;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

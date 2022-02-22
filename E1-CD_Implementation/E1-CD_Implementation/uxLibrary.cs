@@ -14,11 +14,10 @@ namespace E1_CD_Implementation
     {
         //public BindingList<Book> books = new BindingList<Book>();
         BindingSource bs = new BindingSource();
+
         private InputHandler handler;
-        private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private Library model;
+
         public uxLibrary(InputHandler h, Library m)
         {
             model = m;
