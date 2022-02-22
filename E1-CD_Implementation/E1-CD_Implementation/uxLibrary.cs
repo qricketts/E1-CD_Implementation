@@ -36,6 +36,7 @@ namespace E1_CD_Implementation
         private void uxSelectBook_Click(object sender, EventArgs e)
         {
             Book b = books[uxBookList.SelectedIndex];
+            var book = new uxBook(b);
         }
     }
 }
