@@ -14,7 +14,46 @@ namespace E1_CD_Implementation
 
         public int CurrentPage { get; set; }
 
-        public int[] BookMarks { get; set; } = new int[3];
+        private int[] bookMarks;
+
+        public Book(string title, int pageCount)
+        {
+            Title = title;
+            PageCount = pageCount;
+            CurrentPage = 0;
+            bookMarks = new int[3];
+        }
+
+        public void SetBookMark(int index, int pageNum)
+        {
+            if (index > 2) throw new Exception("Bookmark Index Out of Range");
+            bookMarks[index] = pageNum;
+        }
+
+        public int[] GetBookMarks()
+        {
+            return bookMarks;
+        }
+
+        //Changes page
+        public void GoToPage(int pageNum)
+        {
+            if (pageNum < PageCount && pageNum >= 0) CurrentPage = pageNum;
+        }
+
+        //Changes page
+        public void NextPage()
+        {
+            if (CurrentPage >= PageCount - 1) throw new Exception("No Pages Remaining");
+            CurrentPage++;
+        }
+
+        //Changes page
+        public void PrevPage()
+        {
+            if (CurrentPage <= 0) throw new Exception("No Previous Pages");
+            CurrentPage--;
+        }
 
 
     }

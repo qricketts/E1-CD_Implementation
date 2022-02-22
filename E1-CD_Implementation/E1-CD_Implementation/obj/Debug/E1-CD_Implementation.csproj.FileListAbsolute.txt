@@ -13,3 +13,5 @@ C:\Users\hunte\Desktop\CIS 501 E1-CD_Implementation\E1-CD_Implementation\E1-CD_I
 C:\Users\hunte\Desktop\CIS 501 E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.csproj.CoreCompileInputs.cache
 C:\Users\hunte\Desktop\CIS 501 E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.exe
 C:\Users\hunte\Desktop\CIS 501 E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1-CD_Implementation.pdb
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.uxBook.resources
+C:\Users\hurt3\Source\Repos\E1-CD_Implementation\E1-CD_Implementation\E1-CD_Implementation\obj\Debug\E1_CD_Implementation.uxLibrary.resources
