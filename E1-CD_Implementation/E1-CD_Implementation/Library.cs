@@ -8,6 +8,7 @@ namespace E1_CD_Implementation
 {
     public class Library
     {
+        private int bookLimit = 25;
         public int BookCount { get; set; }
 
 
@@ -18,6 +19,18 @@ namespace E1_CD_Implementation
         public void SelectBook(Book book)
         {
             SelectedBook = book;
+        }
+
+        public void AddBook(Book b)
+        {
+            if (BookCount >= bookLimit) throw new Exception("Library Full");
+            Books.Add(b);
+        }
+
+        public void AddBook(string title, int pageCount)
+        {
+            Book b = new Book(title, pageCount);
+            AddBook(b);
         }
 
     }
