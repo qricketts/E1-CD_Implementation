@@ -14,23 +14,28 @@ namespace E1_CD_Implementation
 
         public int CurrentPage { get; set; }
 
-        private int[] bookMarks;
+        private List<int> bookMarks;
 
         public Book(string title, int pageCount)
         {
             Title = title;
             PageCount = pageCount;
             CurrentPage = 0;
-            bookMarks = new int[3];
+            bookMarks = new List<int>();
+        }
+
+        public void SetBookMark(List<int> bookmark)
+        {
+            bookMarks = bookmark;
         }
 
         public void SetBookMark(int index, int pageNum)
         {
-            if (index > 2) throw new Exception("Bookmark Index Out of Range");
-            bookMarks[index] = pageNum;
+            if (index < 3)
+                bookMarks.Add(pageNum);
         }
 
-        public int[] GetBookMarks()
+        public List<int> GetBookMarks()
         {
             return bookMarks;
         }
@@ -44,15 +49,15 @@ namespace E1_CD_Implementation
         //Changes page
         public void NextPage()
         {
-            if (CurrentPage >= PageCount - 1) throw new Exception("No Pages Remaining");
-            CurrentPage++;
+            if (CurrentPage < PageCount)
+                CurrentPage++;
         }
 
         //Changes page
         public void PrevPage()
         {
-            if (CurrentPage <= 0) throw new Exception("No Previous Pages");
-            CurrentPage--;
+            if (CurrentPage > 0)
+                CurrentPage--;
         }
 
         public override string ToString()
