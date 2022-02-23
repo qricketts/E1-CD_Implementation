@@ -14,34 +14,41 @@ namespace E1_CD_Implementation
     {
         public Book book;
 
-        public uxBook(Book b)
+        InputHandler handler;
+
+        public uxBook(InputHandler h, Book b)
         {
             InitializeComponent();
-
+            handler = h;
             book = b;
             updatePage();
         }
 
         private void uxPageBackward_Click_1(object sender, EventArgs e)
         {
-            book.PrevPage();
+            handler(State.PAGEBACKWARD, book, "");
             updatePage();
         }
 
         private void uxPageForward_Click_1(object sender, EventArgs e)
         {
-            book.NextPage();
+            handler(State.PAGEFORWARD, book, "");
+
+            //book.NextPage();
             updatePage();
         }
 
         private void uxAddBookmark_Click_1(object sender, EventArgs e)
         {
-            book.SetBookMark(book.GetBookMarks().Count, book.CurrentPage);
+            handler(State.ADDBOOKMARK, book, "");
+
+            //book.SetBookMark(book.GetBookMarks().Count, book.CurrentPage);
             updatePage();
         }
 
         private void uxRemoveBookmark_Click(object sender, EventArgs e)
         {
+            /*
             List<int> bookmarks = book.GetBookMarks();
             int i = 0;
             foreach (int bm in bookmarks)
@@ -53,6 +60,9 @@ namespace E1_CD_Implementation
                 }
             }
             book.SetBookMark(bookmarks);
+            */
+            handler(State.REMOVEBOOKMARK, book, "");
+
             updatePage();
         }
 
@@ -73,5 +83,28 @@ namespace E1_CD_Implementation
             }
             uxPage.Text = book.Title + "\t\t" + book.CurrentPage + " / " + book.PageCount + temp;
         }
+
+        /*
+        public void DisplayPage(State s, Book b)
+        {
+            switch (s)
+            {
+                case State.PAGEBACKWARD:
+                    b.PrevPage();
+                    break;
+                case State.PAGEFORWARD:
+                    b.NextPage();
+                    break;
+                case State.ADDBOOKMARK:
+                    b.SetBookMark(b.GetBookMarks().Count, b.CurrentPage);
+                    break;
+                case State.REMOVEBOOKMARK:
+                    model.SelectedBook.RemoveBookMark();
+                    break;
+                default:
+                    break;
+            }
+        }
+        */
     }
 }

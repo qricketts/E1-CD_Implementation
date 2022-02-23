@@ -35,6 +35,19 @@ namespace E1_CD_Implementation
                 bookMarks.Add(pageNum);
         }
 
+        public void RemoveBookMark()
+        {
+            foreach (int bm in bookMarks)
+            {
+                if (bm == CurrentPage)
+                {
+                    bookMarks.Remove(bm);
+                    break;
+                }
+            }
+        }
+        
+
         public List<int> GetBookMarks()
         {
             return bookMarks;

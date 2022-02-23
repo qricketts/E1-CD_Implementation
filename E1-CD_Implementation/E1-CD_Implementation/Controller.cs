@@ -11,6 +11,10 @@ namespace E1_CD_Implementation
         START = 0,
         ADDBOOK,
         BOOKSELECTED,
+        PAGEFORWARD,
+        PAGEBACKWARD,
+        ADDBOOKMARK,
+        REMOVEBOOKMARK,
     }
 
     class Controller
@@ -21,6 +25,8 @@ namespace E1_CD_Implementation
         Library model;
 
         Observer observer;
+
+        Observer bookObserver;
 
         /// <summary>
         /// Constructor for Controller
@@ -35,6 +41,11 @@ namespace E1_CD_Implementation
         public void SetObserver(Observer o)
         {
             observer = o;
+        }
+
+        public void SetBookObserver(Observer o)
+        {
+            bookObserver = o;
         }
 
         /// <summary>
@@ -53,7 +64,20 @@ namespace E1_CD_Implementation
                     observer(State.ADDBOOK, b);
                     break;
                 case State.BOOKSELECTED:
+                    model.SelectBook(b);
                     observer(State.BOOKSELECTED, b);
+                    break;
+                case State.PAGEBACKWARD:
+                    b.PrevPage();
+                    break;
+                case State.PAGEFORWARD:
+                    b.NextPage();
+                    break;
+                case State.ADDBOOKMARK:
+                    b.SetBookMark(b.GetBookMarks().Count, b.CurrentPage);
+                    break;
+                case State.REMOVEBOOKMARK:
+                    model.SelectedBook.RemoveBookMark();
                     break;
                 default:
                     break;

@@ -9,7 +9,13 @@ namespace E1_CD_Implementation
     public class Library
     {
         private int bookLimit = 25;
-        public int BookCount { get; set; }
+        public int BookCount
+        {
+            get
+            {
+                return Books.Count;
+            }
+        }
 
 
         public List<Book> Books { get; set; } = new List<Book>();
@@ -27,7 +33,7 @@ namespace E1_CD_Implementation
 
         public void AddBook(Book b)
         {
-            if (BookCount >= bookLimit) throw new Exception("Library Full");
+            if (BookCount >= bookLimit) return; //throw new Exception("Library Full");
             Books.Add(b);
         }
 

@@ -58,7 +58,7 @@ namespace E1_CD_Implementation
                     bs.ResetBindings(false);
                     break;
                 case State.BOOKSELECTED:
-                    uxBook newBook = new uxBook(b);
+                    uxBook newBook = new uxBook(handler, b);
                     newBook.Show();
                     break;
                 default:
