@@ -48,19 +48,6 @@ namespace E1_CD_Implementation
 
         private void uxRemoveBookmark_Click(object sender, EventArgs e)
         {
-            /*
-            List<int> bookmarks = book.GetBookMarks();
-            int i = 0;
-            foreach (int bm in bookmarks)
-            {
-                if (bm == book.CurrentPage)
-                {
-                    bookmarks.Remove(bm);
-                    break;
-                }
-            }
-            book.SetBookMark(bookmarks);
-            */
             handler(State.REMOVEBOOKMARK, book, "");
 
             updatePage();
@@ -83,28 +70,5 @@ namespace E1_CD_Implementation
             }
             uxPage.Text = book.Title + "\t\t" + book.CurrentPage + " / " + book.PageCount + temp;
         }
-
-        /*
-        public void DisplayPage(State s, Book b)
-        {
-            switch (s)
-            {
-                case State.PAGEBACKWARD:
-                    b.PrevPage();
-                    break;
-                case State.PAGEFORWARD:
-                    b.NextPage();
-                    break;
-                case State.ADDBOOKMARK:
-                    b.SetBookMark(b.GetBookMarks().Count, b.CurrentPage);
-                    break;
-                case State.REMOVEBOOKMARK:
-                    model.SelectedBook.RemoveBookMark();
-                    break;
-                default:
-                    break;
-            }
-        }
-        */
     }
 }
