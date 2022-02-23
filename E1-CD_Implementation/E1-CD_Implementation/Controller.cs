@@ -26,8 +26,6 @@ namespace E1_CD_Implementation
 
         Observer observer;
 
-        Observer bookObserver;
-
         /// <summary>
         /// Constructor for Controller
         /// </summary>
@@ -41,11 +39,6 @@ namespace E1_CD_Implementation
         public void SetObserver(Observer o)
         {
             observer = o;
-        }
-
-        public void SetBookObserver(Observer o)
-        {
-            bookObserver = o;
         }
 
         /// <summary>
