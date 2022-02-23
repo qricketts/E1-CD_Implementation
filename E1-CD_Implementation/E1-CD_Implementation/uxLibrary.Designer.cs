@@ -44,7 +44,7 @@ namespace E1_CD_Implementation
             this.uxAdd.TabIndex = 0;
             this.uxAdd.Text = "Add";
             this.uxAdd.UseVisualStyleBackColor = true;
-            this.uxAdd.Click += new System.EventHandler(this.button1_Click);
+            this.uxAdd.Click += new System.EventHandler(this.Add_Button_Click);
             // 
             // textBox1
             // 

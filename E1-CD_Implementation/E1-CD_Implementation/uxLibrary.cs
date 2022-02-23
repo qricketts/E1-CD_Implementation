@@ -13,7 +13,7 @@ namespace E1_CD_Implementation
     public partial class uxLibrary : Form
     {
         //public BindingList<Book> books = new BindingList<Book>();
-        BindingSource bs = new BindingSource();
+        private BindingSource bs = new BindingSource();
 
         private InputHandler handler;
         private Library model;
@@ -66,7 +66,7 @@ namespace E1_CD_Implementation
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Add_Button_Click(object sender, EventArgs e)
         {
             Book b = new Book(textBox2.Text, Int32.Parse(textBox1.Text));
             handler(State.ADDBOOK, b, "");
